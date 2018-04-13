@@ -4,11 +4,15 @@
   [![npm](https://img.shields.io/npm/dm/native-echarts.svg?style=flat)](https://www.npmjs.org/package/native-echarts)
   [![License](http://img.shields.io/npm/l/native-echarts.svg?style=flat)](https://raw.githubusercontent.com/somonus/react-native-echarts/master/LICENSE.md)
   
-## install
+## 安装
 
-$ npm install native-echarts --save
+$ npm install git+https://github.com/lrt4836/react-native-echarts.git --save
 
-## Usage
+## 注意
+
+由于在 Android 环境下，开发模式和生产模式读取文件资源形式不同，所以在生产模式下需要复制项目目录下的 echarts.min.js 和 tpl.html 等文件到 android/app/src/main/assets 目录下，打包后才能正常显示。
+
+## 用法
 
 The Usage is complete consistent with Echarts
 
@@ -86,6 +90,10 @@ Open the Android project in the android directory with Android Studio and click 
 screenshots：
 
 ![image](https://github.com/somonus/react-native-echarts/blob/master/example/demoAndroid.png)
+
+## 版本信息
+
+1、修复android生产环境下不显示的问题
 
 ## License
 
