@@ -28,6 +28,7 @@ export default class App extends Component {
         <WebView
           ref="chart"
           scrollEnabled = {false}
+          renderLoading={() => <View style={{backgroundColor:this.props.backgroundColor || 'transparent'}}/>} // 设置空View，修复webview闪白的问题
           injectedJavaScript = {renderChart(this.props)}
           style={{
             height: this.props.height || 400,
